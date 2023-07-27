@@ -14,8 +14,11 @@ To get started, you must have created a merchant account on [ITEXPay](https://it
 To use the keys above, update the **application.properties** 
 
 itexpay.privatekey=
+
 itexpay.publickey=
+
 itexpay.encryptionkey=
+
 itexpay.baseurl=
 
 ## Build Project
