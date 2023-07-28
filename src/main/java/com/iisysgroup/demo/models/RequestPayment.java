@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class RequestPayment {
     private String amount;
+    private String redirecturl;
     private String description;
     private String currency;
     private String country;
@@ -24,6 +25,14 @@ public class RequestPayment {
 
     public void setAmount(String amount) {
         this.amount = amount;
+    }
+
+    public String getRedirecturl() {
+        return this.redirecturl;
+    }
+
+    public void setRedirecturl(String redirecturl) {
+        this.redirecturl = redirecturl;
     }
 
     public String getDescription() {

@@ -3,6 +3,7 @@ package com.iisysgroup.demo.models.sub;
 public class Transaction {
     private String merchantreference;
     private String callbackurl;
+    private String redirecturl;
     private String authoption;
     private String paymentmethod;
 
@@ -20,6 +21,14 @@ public class Transaction {
 
     public void setCallbackurl(String callbackurl) {
         this.callbackurl = callbackurl;
+    }
+
+    public String getRedirecturl() {
+        return this.redirecturl;
+    }
+
+    public void setRedirecturl(String redirecturl) {
+        this.redirecturl = redirecturl;
     }
 
     public String getAuthoption() {

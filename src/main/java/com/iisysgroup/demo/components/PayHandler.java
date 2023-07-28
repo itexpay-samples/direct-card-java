@@ -69,7 +69,8 @@ public class PayHandler {
         pay.getTransaction().setAuthoption("3DS");
         pay.getTransaction().setMerchantreference(Generic.generateRandomReference());
         pay.getTransaction().setPaymentmethod("card");
-        pay.getTransaction().setCallbackurl("https://webhook.site/71d67c96-b810-4820-9b74-41d19a348e61");
+        pay.getTransaction().setCallbackurl("https://webhook.site/edcb6485-5ba0-4ab1-b9e1-950252bf3477");
+        pay.getTransaction().setRedirecturl(request.getRedirecturl());
         pay.order = new Order();
         pay.getOder().setAmount(request.getAmount());
         pay.getOder().setCountry(request.getCountry());
